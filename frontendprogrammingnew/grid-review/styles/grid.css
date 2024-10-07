@@ -1,0 +1,33 @@
+* { 
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: orangered;
+    margin: 0; 
+    height: 100vh;
+    padding: 48px;
+}
+
+header { 
+    background-color: olivedrab;
+}
+
+h1 { 
+    margin: 0;
+}
+
+main { 
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 280px 180px 300px 280px;
+    grid-template-columns: 30% 70%;
+}
+
+main > div { 
+    background-color: brown;
+}
+
+main > div:nth-of-type(4) { 
+    background-color: transparent;
+}

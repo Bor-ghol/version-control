@@ -1,0 +1,29 @@
+body {
+    background-color: bisque;
+}
+
+.header {
+    background-color: brown;
+    color: white;
+    font-size: 32px;
+}
+
+.header__subtitle {
+    color: pink;
+    font-size: 24px;
+}
+
+.directory {
+    background-color: aqua;
+}
+
+div{
+    color: red;
+}
+
+p{ color: violet;
+}
+
+span {
+    color: green
+}

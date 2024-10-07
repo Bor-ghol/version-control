@@ -1,0 +1,5 @@
+cd  -- change directory
+
+cd name -- change directory to the named directory 
+
+mkdir [name] - make directory

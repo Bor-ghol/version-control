@@ -1,0 +1,67 @@
+* { 
+    box-sizing: border-box;
+}
+
+html { 
+    height: 100vh;
+}
+
+body { 
+    color: #941B0C;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header { 
+    padding: 24px;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.header__page-title { 
+    margin: 0;
+    text-align: center;
+    color: #941B0C;
+    font-size: calc(2rem + 5vw)
+    
+}
+
+.main-content { 
+    flex-grow: 1;
+}
+
+.cat-information { 
+    background-color: orange;
+    padding: 24px;
+}
+.cat-image { 
+    height: auto;
+    width: 100%;
+    animation-fill-mode: forwards;
+}
+
+.cat-facts {
+    margin: 0; 
+    padding: 24px;
+    color:#621708
+}
+
+.background-cat { 
+    background-image: url('../images/uros-miloradovic-zxlRRGrqK7Y-unsplash.jpg');
+    background-attachment:fixed;
+    background-size: cover;
+    margin-top: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: beige;
+    padding: 24px;
+}
+footer { 
+    background-color: #621708;
+    color: antiquewhite;
+    padding: 24px;
+    text-align: center;
+    margin-top: 20px;
+}

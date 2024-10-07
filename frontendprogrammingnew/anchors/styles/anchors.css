@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+html { 
+    background-color: #FFE6A7;
+    height: 100vh;
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    
+}
+
+.header,
+.Footer { 
+    color: #6F1D1B;
+    background-color: #BB9457;
+    padding: 32px;
+    text-align: center;
+}
+
+.header:hover .header__page-title { 
+    color: brown
+}
+
+.header:hover + .main-content .sidebar { 
+    transition: ease-in;
+    background-color: rgb(87, 2, 2);
+    flex: 0 0 50%
+}
+
+.header__page-title { 
+    color: #6F1D1B;
+    font-size: 4rem;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.main-content { 
+    display: flex;
+    flex-grow: 1;
+    min-height: 1500px;
+}
+
+.sidebar { 
+    background-color: #99582A;
+    flex: 0 0 25%;
+    color: #6F1D1B;
+    text-align:center;
+    text-decoration-line: overline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+}
+
+.sidebar a { 
+    color: #BB9457;
+    display: block;
+    margin: 8px;
+    text-decoration: none;
+}
+
+.sidebar a:visited { 
+    color: wheat;
+}
+
+.sidebar a:hover { 
+    color: rgb(243, 179, 101);
+    font-size: 1.5rem;
+}
+
+.sidebar h3:hover { 
+    text-decoration: underline;
+}
+
+.sidebar h3:hover + .sidebar__links { 
+    max-height: 1000px;
+}
+
+.sidebar__links { 
+    color: antiquewhite;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease 1s;
+}
+
+.main { 
+    background-color: #FFE6A7;
+    flex: 1 0  auto;
+}
+
+.horizontal-list li { 
+    display: inline;
+}
+
+.flex-list { 
+    counter-reset: dayscounter; 
+}
+
+.flex-list div::before { 
+    counter-increment: daysCounter;
+    content: counter(daysCounter);
+    color: #432818;
+    display: inline-block;
+    height: 20px; 
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+    text-align: center;
+
+}
