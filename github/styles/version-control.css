@@ -43,3 +43,11 @@ body {
     font-size: large;
     padding: 16px;
 }
+
+footer  { 
+    background-color: black;
+    color: #FEFAE0;
+    padding: 16px;
+    direction: initial;
+    text-align: center;
+}
